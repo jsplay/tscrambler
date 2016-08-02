@@ -10,5 +10,6 @@ function scramble(inputString) {
         r =  Math.floor(Math.random() * tags.length);
         out += "<" + tags[r] + ">" + inputString[i] + "</" + tags[r] + ">";
     }
-    return out;
+    document.getElementById("myoutput").value = out;
+    document.getElementById("myoutput2").innerHTML = out;
 }

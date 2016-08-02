@@ -6,16 +6,15 @@
     <script src="tscrambler.js"></script>
 </head>
 <body>
-
-<script>
-    var string1 = "We are the champions my friends! And we'll keep on fighting till the end!";
-    document.write(string1 + "<br>");
-    document.write(scramble(string1) + "<br>");
-    console.log(scramble(string1));
-</script>
-    
     <form>
-        <div id="output"></div>
+        Enter text to scramble:<br>
+        <textarea rows="10" cols="40" id="myinput">We are the champions my friends!
+And we'll keep on fighting till the end!</textarea><br><br>
+        <div id="myoutput2" style="display: inline; width: 100px;">Scrambled text with show up here.</div><br><br>
+        Copy/paste this for forums:<br>
+        <textarea rows="10" cols="40" id="myoutput"></textarea><br><br>
+        <button type="button" onClick=scramble(document.getElementById("myinput").value);>Scramble</button>
     </form>
+    
 </body>
 </html>
